@@ -37,7 +37,7 @@ class StockPrices:
         }
 
         # Sending HTTP request to api endpoint - with params
-        response = request.get(url, params=params, verify=False)
+        response = requests.get(url, params=params, verify=False)
 
         if response.content:
             # Parse json response
@@ -70,10 +70,10 @@ class StockPrices:
         print(f"Historical {self.company_symbol} prices have been saved to {filename}")
 
 def main():
-    if len(sys.arv) != 2:
+    if len(sys.argv) != 2:
         print("Missing arguments")
-        print("Usage: python {sys.argv[0] SYMBOL}")
-        print("Example: python {sys.argv[0] SCOM}")
+        print("Usage: python {sys.argv[0]} SYMBOL")
+        print("Example: python {sys.argv[0]} SCOM")
         sys.exit
     
     # Get company symbol fromargs
