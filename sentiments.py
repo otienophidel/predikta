@@ -4,6 +4,7 @@
 # Streams in live tweets
 #
 # Usage:
+#       python sentiments.py <keyword>
 #
 #
 """
