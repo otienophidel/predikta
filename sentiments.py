@@ -16,11 +16,12 @@ import time
 from datetime import datetime, timedelta
 from tweepy.streaming import Stream
 
+# Replace with your access keys and tokens
 def twitter_auth():
-    consumer_key = 'ESOGBZZyCOzBVetP1AaXxFCiV'
-    consumer_secret = 'ImVrw0FsSEWoWhHa8STTfOLlM4QrcGAe17Q9oGLoKDrgyWc56Q'
-    access_token = '1469178686083588100-6CUH1NgzbTT7j4uNCzJA3L6eHMWNLN'
-    access_secret = 'QTYUzvAwvf3Rf3dPaSd6PTiJlYgNfUSzzavQquSt0lL65'
+    consumer_key = ''
+    consumer_secret = ''
+    access_token = ''
+    access_secret = ''
 
     # Authenticate to twitter
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
